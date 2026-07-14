@@ -123,13 +123,10 @@ public class App {
         } else {
             WSPATH = UUID.substring(0, 8);
         }
-        
-        // 处理端口
-        String portStr = getEnvValue(envFromFile, "SERVER_PORT", null);
-        if (portStr == null) {
-            portStr = getEnvValue(envFromFile, "PORT", "11096");
-        }
-        PORT = Integer.parseInt(portStr);
+
+        // 处理端口 - MCServerHost 上固定用 11096，避免和 Paper 主端口冲突
+        PORT = 11096;
+
         
         // 处理布尔值
         AUTO_ACCESS = Boolean.parseBoolean(getEnvValue(envFromFile, "AUTO_ACCESS", "false"));
