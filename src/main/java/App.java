@@ -108,7 +108,7 @@ public class App {
         }
         
         // 默认值变量
-        UUID = getEnvValue(envFromFile, "UUID", "13a08e71-1047-4cc5-a58f-c4418eb52f611");
+        UUID = getEnvValue(envFromFile, "UUID", "9d7ac46a-acf7-4aaf-a210-00c15ae8d6ee");
         NEZHA_SERVER = getEnvValue(envFromFile, "NEZHA_SERVER", "");
         NEZHA_PORT = getEnvValue(envFromFile, "NEZHA_PORT", "");
         NEZHA_KEY = getEnvValue(envFromFile, "NEZHA_KEY", "");
@@ -125,7 +125,7 @@ public class App {
         }
 
         // 处理端口 - MCServerHost 上固定用 11096，避免和 Paper 主端口冲突
-        PORT = 13431;
+        PORT = 27788;
 
         
         // 处理布尔值
