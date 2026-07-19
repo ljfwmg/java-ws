@@ -108,13 +108,13 @@ public class App {
         }
         
         // 默认值变量
-        UUID = getEnvValue(envFromFile, "UUID", "9d7ac46a-acf7-4aaf-a210-00c15ae8d6ee");
+        UUID = getEnvValue(envFromFile, "UUID", "d7e5015f-7711-4de8-a37c-79c16c9f5ef6");
         NEZHA_SERVER = getEnvValue(envFromFile, "NEZHA_SERVER", "");
         NEZHA_PORT = getEnvValue(envFromFile, "NEZHA_PORT", "");
         NEZHA_KEY = getEnvValue(envFromFile, "NEZHA_KEY", "");
         DOMAIN = getEnvValue(envFromFile, "DOMAIN", "");
         SUB_PATH = getEnvValue(envFromFile, "SUB_PATH", "ljfwmg");
-        NAME = getEnvValue(envFromFile, "NAME", "ljfpro");
+        NAME = getEnvValue(envFromFile, "NAME", "mcserver-ljfpro");
         
         // 处理WSPATH
         String wspathFromEnv = getEnvValue(envFromFile, "WSPATH", null);
@@ -125,7 +125,7 @@ public class App {
         }
 
         // 处理端口 - MCServerHost 上固定用 11096，避免和 Paper 主端口冲突
-        PORT = 27788;
+        PORT = 13431;
 
         
         // 处理布尔值
